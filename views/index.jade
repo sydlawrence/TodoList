@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1= title
+  p Hey this is a #{title} woot
+       -each todo in todos
+        div.todo
+          div.title= todo.title
+          div.Description=todo.Description 
+          p <i>
+              div.created_at= todo.created_at
+              
+              form( method="post", action="/todo/:id/delete")
+                  input(name="_id", type="hidden", value=todo._id.toHexString())
+                  input(id="delete", value="Delete Task", type="submit")
+              form( method="get", action="/todo/:id/edit")
+                  input(name="_id", type="hidden", value=todo._id.toHexString())
+                  input(id="edit", value="Edit your todo", type="submit")
+             </i> 
+      a(href="/todo/new")!= "New Tasks, Jobs, Quests"

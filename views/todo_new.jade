@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h1= title
+    dive.newtodo
+         form( method="post")
+              div
+                   div
+                       span.label Title:
+                       input(type="text", name="title", id="editTodoTitle")
+                   div
+                       span.label Description:
+                       input(type="text", name="Description", id="EditToDoDescription")
+                   div#editTodoSubmit
+                       input(type="submit", value="Save")
+         a(href="/")!= "Back to Todo List"
