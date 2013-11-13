@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -32,7 +31,7 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-//Mongo local server
+//Mongo local DB
 var todoprov = new todoprov ('localhost', 27017);
 
 
