@@ -3,4 +3,4 @@ TODOLIST WOOT
 Alrighty! 
 V3 : issues 
 Stupid text won't display after I edit the description of a Todo, it vanishes.
-I think it has to do with the order of my code when reading/writing/displaying form MongoDB
+I think it has to do with the order of my code when reading/writing/displaying from MongoDB
